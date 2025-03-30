@@ -16,9 +16,8 @@ export default defineUserConfig({
     logo: "/logo.svg",
     author: "Ryouhh",
     authorAvatar: "/logo.svg",
-    docsRepo: "https://github.com/CoderRyou",
-    docsBranch: "main",
-    docsDir: "/docs",
+    docsRepo: "https://github.com/CoderRyou/CoderRyou.github.io",
+    docsBranch: "master",
     // series 为原 sidebar
     series: {
       "/docs/theme-reco/": [
@@ -33,10 +32,11 @@ export default defineUserConfig({
       ],
     },
     navbar: [
-      { text: "首页", link: "/" },
-      { text: "分类", link: "/categories/riyu/1.html" },
-      { text: "标签", link: "/tags/riyu/1.html" },
-      { text: "博客", link: "/posts.html" }
+      { text: "首页", link: "/", icon: "IconHome" },
+      { text: "分类", link: "/categories/riyu/1.html", icon: "IconCate" },
+      { text: "标签", link: "/tags/riyu/1.html", icon: "IconTag" },
+      { text: "博客", link: "/posts.html", icon: "IconBlog" },
+      { text: "时间轴", link: "/timeline.html", icon: "IconTimeline" },
     ],
     // bulletin: {
     //   body: [

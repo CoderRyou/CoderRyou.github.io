@@ -11,6 +11,7 @@ categories:
 series: japanese_primary_v1
 series_order: 0
 series_name: 新标日初级上册
+next: /blogs/japanese/primary_v1/L1.html
 ---
 
 [[toc]]
