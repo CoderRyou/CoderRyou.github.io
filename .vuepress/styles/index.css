@@ -13,3 +13,40 @@ h1, h2, h3, h4, h5, h6 {
 code, pre, kbd, samp {
   font-family: 'LXGW WenKai Mono', monospace;
 }
+
+:root {
+  --vp-c-bg: #fff;
+  --vp-t-color: .3s ease;
+  --vp-t-transform: .3s ease;
+  --vp-c-text: rgb(51 65 85 / var(--tw-text-opacity));
+
+  --tab-c-bg: var(--vp-c-bg);
+  --tab-c-nav: var(--vp-c-text);
+  --tab-c-bg-nav: var(--vp-c-grey-bg);
+  --tab-c-bg-nav-hover: var(--vp-c-control-hover)
+}
+
+.vp-code-tabs {
+  --code-c-bg: rgb(249 250 251 / var(--tw-bg-opacity));
+  --code-tabs-c-text: var(--vp-c-text);
+  --code-tabs-c-bg: rgba(0 0 0 / 10%);
+  --code-tabs-c-hover: var(--code-c-bg, var(--vp-c-bg-alt));
+  --code-tabs-c-border: rgba(200, 200, 200, .32);
+
+  div[class*=language-] {
+    border-top: 0;
+    margin-top: 0.75rem;
+  }
+}
+
+.vp-code-tabs:is(.dark *) {
+  --code-c-bg: rgb(32 32 34 / var(--tw-bg-opacity));
+  --code-tabs-c-border: rgba(82, 82, 89, .32);
+  --code-tabs-c-text: rgb(226 232 240 / var(--tw-text-opacity));
+}
+
+.vp-code-tabs-nav {
+  border-width: 1px 1px 0 1px;
+  border-style: solid;
+  border-color: var(--code-tabs-c-border);
+}

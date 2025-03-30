@@ -1,6 +1,7 @@
 import { defineUserConfig } from "vuepress";
 import recoTheme from "vuepress-theme-reco";
 import { viteBundler } from '@vuepress/bundler-vite'
+import { markdownTabPlugin } from '@vuepress/plugin-markdown-tab'
 
 export default defineUserConfig({
   title: "Ryouhh's Blog",
@@ -131,5 +132,13 @@ export default defineUserConfig({
       rel: "stylesheet",
       href: "https://cdn.jsdelivr.net/npm/@callmebill/lxgw-wenkai-web@latest/style.css"
     }],
-  ]
+  ],
+  plugins: [
+    markdownTabPlugin({
+      // 启用代码选项卡
+      codeTabs: true,
+      // 启用选项卡
+      tabs: true,
+    }),
+  ],
 });
