@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as a}from"./app-HIKONubV.js";const o={};function r(c,s){return a(),t("div")}const n=e(o,[["render",r]]),_=JSON.parse('{"path":"/categories/shell/1.html","title":"","lang":"zh-CN","frontmatter":{"layout":"Categories"},"headers":[],"git":{},"filePathRelative":null}');export{n as comp,_ as data};
